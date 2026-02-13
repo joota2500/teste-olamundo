@@ -1,0 +1,78 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo com degradê */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  margin: 1rem;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header h2, header h3 {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+/* Lista de links */
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+header ul li {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+header ul li:hover {
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+/* Conteúdo principal */
+article, aside {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1rem;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+article h2 {
+  margin-bottom: 1rem;
+  color: #0077b6;
+}
+
+aside {
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.7);
+}
